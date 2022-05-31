@@ -146,7 +146,7 @@ namespace DirectoryOrganizer
                                                 {
                                                     if (Directory.Exists(item))
                                                     {
-                                                        LogLines.Add("Check : " + Path.GetFileName(item));
+                                                        //LogLines.Add("Check : " + Path.GetFileName(item));
 
                                                         //Artist Items
                                                         string[] subitems = Directory.GetDirectories(item, "*", SearchOption.TopDirectoryOnly);
@@ -155,7 +155,7 @@ namespace DirectoryOrganizer
                                                         string dstItem = Path.Combine(dst, Path.GetFileName(item));
                                                         if (Directory.Exists(dstItem))
                                                         {
-                                                            LogLines.Add("Find : " + Path.GetFileName(dstItem));
+                                                            //LogLines.Add("Find : " + Path.GetFileName(dstItem));
 
                                                             foreach (string subitem in subitems)
                                                             {
